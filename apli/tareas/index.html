@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <link href="../../style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <title>App de Lista de tareas⭐</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=0.95">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+</head>
+
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js">
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.fixed-action-btn');
+      var instances = M.FloatingActionButton.init(elems, {
+        toolbarEnabled: true
+      });
+    });
+  </script>
+
+  <div class="fixed-action-btn toolbar ">
+    <a class="btn-floating pulse btn-large blue ">
+      <i class="large material-icons">menu</i>
+    </a>
+    <ul>
+      <li>
+        <a onclick="history.back()" class="btn-floating">
+          <i class="material-icons">arrow_back</i>
+        </a>
+      </li>
+      <li>
+        <a href="../../otr/certificados/index.html" class="btn-floating">
+          <i class="material-icons">school</i>
+        </a>
+      </li>
+      <li>
+        <a href="../../index.html" class="btn-floating">
+          <i class="material-icons">home</i>
+        </a>
+      </li>
+      <li>
+        <a href="../../otr/index.html" class="btn-floating">
+          <i class="material-icons">videogame_asset</i>
+        </a>
+      </li>
+      <li>
+        <a onclick="mensaje()" class="btn-floating">
+          <i class="material-icons">share</i>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+  <script src="../../main.js"></script>
+  <script src='https://cdn.jsdelivr.net/npm/sweetalert2'></script>
+
+
+
+  <div class="wrapper">
+    <div class="align">
+
+      <!------ To-Do List App ----->
+      <div class="app">
+        <div class="infoo">
+          <div class="date">
+            <p id="day">
+              <span id="today">Jueves,</span>
+              <span id="daymonth"> 2 de</span>
+            </p>
+            <p id='month'>Agosto</p>
+          </div>
+          <div class="infoo-bottomm">
+            <div class="left">
+              <p id="count">7</p>
+              <p id="tasks">Total</p>
+            </div>
+            <div class="middle">
+              <p id="remaining_done">5</p>
+              <p id="remaining_tasks">Restante</p>
+            </div>
+            <div class="right">
+              <p id="count_done">2</p>
+              <p id="tasks_done">Hecho</p>
+            </div>
+          </div>
+        </div>
+
+        <dl>
+          <p id="today2">
+            <strong>Tareas</strong> para hoy</p>
+          <dt class="lihiden">
+            <a href="" class="check_button" onmousedown="return false">
+              <i class="fa fa-check-circle mark" aria-hidden="true"></i>
+            </a>
+            <div class="right">
+              <p contenteditable="true">Comprar leche</p>
+            </div>
+            <span class="delete_button" onmousedown='return false'>
+              <i class="fa fa-times-circle" aria-hidden="true"></i>
+            </span>
+          </dt>
+
+          <dt class="lihiden">
+            <a href="" class="check_button" onmousedown="return false">
+              <i class="fa fa-circle-thin" aria-hidden="true"></i>
+            </a>
+            <div class="right">
+              <p contenteditable="true">Comprar pan</p>
+            </div>
+            <span class="delete_button" onmousedown='return false'>
+              <i class="fa fa-times-circle" aria-hidden="true"></i>
+            </span>
+          </dt>
+
+          <dt class="lihiden">
+            <a href="" class="check_button" onmousedown="return false">
+              <i class="fa fa-circle-thin" aria-hidden="true"></i>
+            </a>
+            <div class="right">
+              <p contenteditable="true">Pagar las cuentas</p>
+            </div>
+            <span class="delete_button" onmousedown='return false'>
+              <i class="fa fa-times-circle" aria-hidden="true"></i>
+            </span>
+          </dt>
+
+          <dt class="lihiden">
+            <a href="" class="check_button" onmousedown="return false">
+              <i class="fa fa-check-circle mark" aria-hidden="true"></i>
+            </a>
+            <div class="right">
+              <p contenteditable="true">Ir a peluquería</p>
+            </div>
+            <span class="delete_button" onmousedown='return false'>
+              <i class="fa fa-times-circle" aria-hidden="true"></i>
+            </span>
+          </dt>
+
+          <dt class="lihiden">
+            <a href="" class="check_button" onmousedown="return false">
+              <i class="fa fa-circle-thin" aria-hidden="true"></i>
+            </a>
+            <div class="right">
+              <p contenteditable="true">Tomar un descanso</p>
+            </div>
+            <span class="delete_button" onmousedown='return false'>
+              <i class="fa fa-times-circle" aria-hidden="true"></i>
+            </span>
+          </dt>
+
+          <dt class="lihiden">
+            <a href="" class="check_button" onmousedown="return false">
+              <i class="fa fa-circle-thin" aria-hidden="true"></i>
+            </a>
+            <div class="right">
+              <p contenteditable="true">Conquistar el mundo</p>
+            </div>
+            <span class="delete_button" onmousedown='return false'>
+              <i class="fa fa-times-circle" aria-hidden="true"></i>
+            </span>
+          </dt>
+
+          <dt class="lihiden">
+            <a href="" class="check_button" onmousedown="return false">
+              <i class="fa fa-circle-thin" aria-hidden="true"></i>
+            </a>
+            <div class="right">
+              <p contenteditable="true">Conquista la galaxia</p>
+            </div>
+            <span class="delete_button" onmousedown='return false'>
+              <i class="fa fa-times-circle" aria-hidden="true"></i>
+            </span>
+          </dt>
+
+          </ol>
+
+          <div class="bottom">
+            <a href="" id="add-new" onmousedown="return false">
+              <i class="fa fa-plus" aria-hidden="true"></i>
+              Nueva tarea
+            </a>
+          </div>
+
+      </div>
+      <!-- <p id="copyright">&nbsp;<strong><a href="https://www.linkedin.com/in/nicolae-stefan-tudoran-b02291127/" target="_blank">Stefan Tudoran</a></strong></p> -->
+      <!----- End To-Do List ------->
+
+    </div>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+
+
+  <script src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

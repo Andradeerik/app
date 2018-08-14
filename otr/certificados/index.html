@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>certificados</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../style.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <style>
+    @font-face {
+      font-family: 'Monoton';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Monoton'), local('Monoton-Regular'), url(http://themes.googleusercontent.com/static/fonts/monoton/v4/AKI-lyzyNHXByGHeOcds_w.woff) format('woff');
+    }
+
+    @font-face {
+      font-family: 'Iceland';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Iceland'), local('Iceland-Regular'), url(http://themes.googleusercontent.com/static/fonts/iceland/v3/F6LYTZLHrG9BNYXRjU7RSw.woff) format('woff');
+    }
+
+    @font-face {
+      font-family: 'Pacifico';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Pacifico Regular'), local('Pacifico-Regular'), url(http://themes.googleusercontent.com/static/fonts/pacifico/v5/yunJt0R8tCvMyj_V4xSjafesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+    }
+
+    @font-face {
+      font-family: 'Audiowide';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Audiowide'), local('Audiowide-Regular'), url(http://themes.googleusercontent.com/static/fonts/audiowide/v2/8XtYtNKEyyZh481XVWfVOj8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+    }
+
+    @font-face {
+      font-family: 'Vampiro One';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Vampiro One'), local('VampiroOne-Regular'), url(http://themes.googleusercontent.com/static/fonts/vampiroone/v3/Ho2Xld8UbQyBA8XLxF1_NYbN6UDyHWBl620a-IRfuBk.woff) format('woff');
+    }
+
+    /*neon effect*/
+
+    p {
+      text-align: center;
+      font-size: 2em;
+      margin: 20px 0 20px 0;
+    }
+
+    a {
+      text-decoration: none;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      transition: all 0.5s;
+    }
+
+    p:nth-child(1) a {
+      color: #FF1177;
+      font-family: Monoton;
+    }
+
+    p:nth-child(1) a:hover {
+      -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+      -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+      animation: neon1 1.5s ease-in-out infinite alternate;
+    }
+
+    p:nth-child(2) a {
+      font-size: 1.5em;
+      color: #228DFF;
+      font-family: Iceland;
+    }
+
+    p:nth-child(2) a:hover {
+      -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+      -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+      animation: neon2 1.5s ease-in-out infinite alternate;
+    }
+
+    p:nth-child(3) a {
+      color: #FFDD1B;
+      font-family: Audiowide;
+    }
+
+    p:nth-child(3) a:hover {
+      -webkit-animation: neon3 1.5s ease-in-out infinite alternate;
+      -moz-animation: neon3 1.5s ease-in-out infinite alternate;
+      animation: neon3 1.5s ease-in-out infinite alternate;
+    }
+
+    p:nth-child(4) a {
+      color: #FF9900;
+      font-family: Pacifico;
+    }
+
+    p:nth-child(4) a:hover {
+      -webkit-animation: neon4 1.5s ease-in-out infinite alternate;
+      -moz-animation: neon4 1.5s ease-in-out infinite alternate;
+      animation: neon4 1.5s ease-in-out infinite alternate;
+    }
+
+    p:nth-child(5) a {
+      color: #BA01FF;
+      font-family: Vampiro One;
+    }
+
+    p:nth-child(5) a:hover {
+      -webkit-animation: neon5 1.5s ease-in-out infinite alternate;
+      -moz-animation: neon5 1.5s ease-in-out infinite alternate;
+      animation: neon5 1.5s ease-in-out infinite alternate;
+    }
+
+    p a:hover {
+      color: #ffffff;
+    }
+
+
+
+    /*glow for webkit-ket-frames*/
+
+    @-webkit-keyframes neon1 {
+      from {
+        text-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #fff,
+        0 0 40px #FF1177,
+        0 0 70px #FF1177,
+        0 0 80px #FF1177,
+        0 0 100px #FF1177,
+        0 0 150px #FF1177;
+      }
+      to {
+        text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #FF1177,
+        0 0 35px #FF1177,
+        0 0 40px #FF1177,
+        0 0 50px #FF1177,
+        0 0 75px #FF1177;
+      }
+    }
+
+    @-webkit-keyframes neon2 {
+      from {
+        text-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #fff,
+        0 0 40px #228DFF,
+        0 0 70px #228DFF,
+        0 0 80px #228DFF,
+        0 0 100px #228DFF,
+        0 0 150px #228DFF;
+      }
+      to {
+        text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #228DFF,
+        0 0 35px #228DFF,
+        0 0 40px #228DFF,
+        0 0 50px #228DFF,
+        0 0 75px #228DFF;
+      }
+    }
+
+    @-webkit-keyframes neon3 {
+      from {
+        text-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #fff,
+        0 0 40px #FFDD1B,
+        0 0 70px #FFDD1B,
+        0 0 80px #FFDD1B,
+        0 0 100px #FFDD1B,
+        0 0 150px #FFDD1B;
+      }
+      to {
+        text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #FFDD1B,
+        0 0 35px #FFDD1B,
+        0 0 40px #FFDD1B,
+        0 0 50px #FFDD1B,
+        0 0 75px #FFDD1B;
+      }
+    }
+
+    @-webkit-keyframes neon4 {
+      from {
+        text-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #fff,
+        0 0 40px #FF9900,
+        0 0 70px #FF9900,
+        0 0 80px #FF9900,
+        0 0 100px #FF9900,
+        0 0 150px #FF9900;
+      }
+      to {
+        text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #FF9900,
+        0 0 35px #FF9900,
+        0 0 40px #FF9900,
+        0 0 50px #FF9900,
+        0 0 75px #FF9900;
+      }
+    }
+
+    @-webkit-keyframes neon5 {
+      from {
+        text-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #fff,
+        0 0 40px #ff00de,
+        0 0 70px #ff00de,
+        0 0 80px #ff00de,
+        0 0 100px #ff00de,
+        0 0 150px #ff00de;
+      }
+      to {
+        text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #ff00de,
+        0 0 35px #ff00de,
+        0 0 40px #ff00de,
+        0 0 50px #ff00de,
+        0 0 75px #ff00de;
+      }
+    }
+
+    /*glow for mozilla-keyframes*/
+
+    @-moz-keyframes neon1 {
+      from {
+        text-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #fff,
+        0 0 40px #FF1177,
+        0 0 70px #FF1177,
+        0 0 80px #FF1177,
+        0 0 100px #FF1177,
+        0 0 150px #FF1177;
+      }
+      to {
+        text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #FF1177,
+        0 0 35px #FF1177,
+        0 0 40px #FF1177,
+        0 0 50px #FF1177,
+        0 0 75px #FF1177;
+      }
+    }
+
+    @-moz-keyframes neon2 {
+      from {
+        text-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #fff,
+        0 0 40px #228DFF,
+        0 0 70px #228DFF,
+        0 0 80px #228DFF,
+        0 0 100px #228DFF,
+        0 0 150px #228DFF;
+      }
+      to {
+        text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #228DFF,
+        0 0 35px #228DFF,
+        0 0 40px #228DFF,
+        0 0 50px #228DFF,
+        0 0 75px #228DFF;
+      }
+    }
+
+    @-moz-keyframes neon3 {
+      from {
+        text-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #fff,
+        0 0 40px #FFDD1B,
+        0 0 70px #FFDD1B,
+        0 0 80px #FFDD1B,
+        0 0 100px #FFDD1B,
+        0 0 150px #FFDD1B;
+      }
+      to {
+        text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #FFDD1B,
+        0 0 35px #FFDD1B,
+        0 0 40px #FFDD1B,
+        0 0 50px #FFDD1B,
+        0 0 75px #FFDD1B;
+      }
+    }
+
+    @-moz-keyframes neon4 {
+      from {
+        text-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #fff,
+        0 0 40px #FF9900,
+        0 0 70px #FF9900,
+        0 0 80px #FF9900,
+        0 0 100px #FF9900,
+        0 0 150px #FF9900;
+      }
+      to {
+        text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #FF9900,
+        0 0 35px #FF9900,
+        0 0 40px #FF9900,
+        0 0 50px #FF9900,
+        0 0 75px #FF9900;
+      }
+    }
+
+    @-moz-keyframes neon5 {
+      from {
+        text-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #fff,
+        0 0 40px #ff00de,
+        0 0 70px #ff00de,
+        0 0 80px #ff00de,
+        0 0 100px #ff00de,
+        0 0 150px #ff00de;
+      }
+      to {
+        text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #ff00de,
+        0 0 35px #ff00de,
+        0 0 40px #ff00de,
+        0 0 50px #ff00de,
+        0 0 75px #ff00de;
+      }
+    }
+
+    /*glow*/
+
+    @keyframes neon1 {
+      from {
+        text-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #fff,
+        0 0 40px #FF1177,
+        0 0 70px #FF1177,
+        0 0 80px #FF1177,
+        0 0 100px #FF1177,
+        0 0 150px #FF1177;
+      }
+      to {
+        text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #FF1177,
+        0 0 35px #FF1177,
+        0 0 40px #FF1177,
+        0 0 50px #FF1177,
+        0 0 75px #FF1177;
+      }
+    }
+
+    @keyframes neon2 {
+      from {
+        text-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #fff,
+        0 0 40px #228DFF,
+        0 0 70px #228DFF,
+        0 0 80px #228DFF,
+        0 0 100px #228DFF,
+        0 0 150px #228DFF;
+      }
+      to {
+        text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #228DFF,
+        0 0 35px #228DFF,
+        0 0 40px #228DFF,
+        0 0 50px #228DFF,
+        0 0 75px #228DFF;
+      }
+    }
+
+    @keyframes neon3 {
+      from {
+        text-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #fff,
+        0 0 40px #FFDD1B,
+        0 0 70px #FFDD1B,
+        0 0 80px #FFDD1B,
+        0 0 100px #FFDD1B,
+        0 0 150px #FFDD1B;
+      }
+      to {
+        text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #FFDD1B,
+        0 0 35px #FFDD1B,
+        0 0 40px #FFDD1B,
+        0 0 50px #FFDD1B,
+        0 0 75px #FFDD1B;
+      }
+    }
+
+    @keyframes neon4 {
+      from {
+        text-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #fff,
+        0 0 40px #FF9900,
+        0 0 70px #FF9900,
+        0 0 80px #FF9900,
+        0 0 100px #FF9900,
+        0 0 150px #FF9900;
+      }
+      to {
+        text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #FF9900,
+        0 0 35px #FF9900,
+        0 0 40px #FF9900,
+        0 0 50px #FF9900,
+        0 0 75px #FF9900;
+      }
+    }
+
+    @keyframes neon5 {
+      from {
+        text-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #fff,
+        0 0 40px #ff00de,
+        0 0 70px #ff00de,
+        0 0 80px #ff00de,
+        0 0 100px #ff00de,
+        0 0 150px #ff00de;
+      }
+      to {
+        text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #ff00de,
+        0 0 35px #ff00de,
+        0 0 40px #ff00de,
+        0 0 50px #ff00de,
+        0 0 75px #ff00de;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="fixed-action-btn toolbar ">
+    <a class="btn-floating pulse btn-large blue ">
+      <i class="large material-icons">menu</i>
+    </a>
+    <ul>
+      <li>
+        <a onclick="history.back()" class="btn-floating">
+          <i class="material-icons">arrow_back</i>
+        </a>
+      </li>
+      <li>
+        <a href="index.html" class="btn-floating">
+          <i class="material-icons">school</i>
+        </a>
+      </li>
+      <li>
+        <a href="../../index.html" class="btn-floating">
+          <i class="material-icons">home</i>
+        </a>
+      </li>
+      <li>
+        <a href="../index.html" class="btn-floating">
+          <i class="material-icons">videogame_asset</i>
+        </a>
+      </li>
+      <li>
+        <a onclick="mensaje()" class="btn-floating">
+          <i class="material-icons">share</i>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+  <div class="container">
+
+    <p>
+      <a href="">
+        Certificados.
+      </a>
+    </p>
+
+    <p>
+      <a href="">
+        Certificados.
+      </a>
+    </p>
+
+    <p>
+      <a href="">
+        Certificados.
+      </a>
+    </p>
+
+    <p>
+      <a href="">
+        Certificados.
+      </a>
+    </p>
+
+    <p>
+      <a href="">
+        Certificados.
+      </a>
+    </p>
+
+  </div>
+
+
+  <section class="cards-wrapper">
+    <div class="card1-grid-space">
+      <div class="num">01</div>
+      <a class="card1" style="--bg-img: url(https://i.ytimg.com/vi/ynZKMmbJUjM/maxresdefault.jpg)">
+        <div>
+          <h1>Platzi</h1>
+          <p>Curso de Programación Básica</p>
+          <div class="date">28 mayo 2018 </div>
+          <div class="tags">
+
+            <div class="tag">HTML, CSS, JavaScript</div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="card1-grid-space">
+      <div class="num">02</div>
+      <a class="card1" href="https://" style="--bg-img: url(https://www.todoandroid.es/wordpress/wp-content/uploads/2018/06/sololearn.jpg)">
+        <div>
+          <h1>Sololearn</h1>
+          <p>curso tutorial en javascript</p>
+          <div class="date">7 Abril 2018</div>
+          <div class="tags">
+            <div class="tag">JavaScript</div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="card1-grid-space">
+      <div class="num">03</div>
+      <a class="card1" href="https:///" style="--bg-img: url(https://p.apk4fun.com/68/f4/4c/com.sololearn-featured.jpg)">
+        <div>
+          <h1>Sololearn</h1>
+          <p>curso devFundametos de css</p>
+          <div class="date">15 Marzi 2018</div>
+          <div class="tags">
+            <div class="tag">CSS</div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="card1-grid-space">
+      <div class="num">04</div>
+      <a class="card1" href="https:///" style="--bg-img: url(https://lh3.googleusercontent.com/zwwddqxgFlP14DlucvBV52RUMA-cV3vRvmjf-iWqxuVhYVmB-l8XN9NDirb0687DSw)">
+        <div>
+          <h1>Sololearn</h1>
+          <p>Fundamentos de HTML</p>
+          <div class="date">24 Febrero 2018</div>
+          <div class="tags">
+            <div class="tag">HTML</div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <!-- https://images.unsplash.com/photo-1520839090488-4a6c211e2f94?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=38951b8650067840307cba514b554ba5&auto=format&fit=crop&w=1350&q=80 -->
+  </section>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js">
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.fixed-action-btn');
+      var instances = M.FloatingActionButton.init(elems, {
+        toolbarEnabled: true
+      });
+    });
+  </script>
+  <script src='https://cdn.jsdelivr.net/npm/sweetalert2'></script>
+  <script src="../../main.js"></script>
+</body>
+
+</html>

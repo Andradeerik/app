@@ -1,0 +1,16 @@
+{
+  "name": "Daniel Andrade",
+  "short_name": "APDE",
+  "description": "Sobre Mi",
+  "background_color": "#2B2B2B",
+  "theme_color": "#2196F3",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "./?utm_source=web_app_manifest",
+  "scope": "./",
+  "lang": "es-MX",
+  "icons": [{
+    "src": "./img/cropped-1501528948310.png",
+    "type": "image/png"
+  }]
+}

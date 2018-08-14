@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <style>
+    #cont_escalable {
+      display: block;
+    }
+
+    @media only screen and (orientation:portrait) {
+      #cont_escalable {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+
+      }
+    }
+
+    @media only screen and (orientation:landscape) {
+
+      #cont_escalable {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+    }
+  </style>
+
+  <!-- <meta name="viewport" content="width=[Pixeles del mínimo ancho para visualizar bien la web]" /> -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contador</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+</head>
+
+<body id="cont_escalable">
+
+
+
+  <div id="root">
+    <!-- This element's contents will be replaced with your component. -->
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.min.js'></script>
+
+
+
+  <script src="js/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js">
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.fixed-action-btn');
+      var instances = M.FloatingActionButton.init(elems, {
+        toolbarEnabled: true
+      });
+    });
+  </script>
+  <!--[if lt IE 9]><script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
+  <!-- <div  class="fixed-action-btn toolbar " >
+                <a class="btn-floating pulse btn-large blue ">
+                  <i class="large material-icons">menu</i>
+                </a>
+                <ul>
+                  <li><a onclick="history.back()" class="btn-floating"><i class="material-icons">arrow_back</i></a></li>
+                  <li><a class="btn-floating"><i class="material-icons">insert_chart</i></a></li>
+                  <li><a href="C:\xampp\htdocs\andradeerik\index.html" class="btn-floating"><i class="material-icons">home</i></a></li>
+                  <li><a class="btn-floating"><i class="material-icons">publish</i></a></li>
+                  <li><a class="btn-floating"><i class="material-icons">share</i></a>
+                  </li>
+                  
+                </ul>
+              </div> -->
+  <script>
+  </script>
+</body>
+
+</html>
