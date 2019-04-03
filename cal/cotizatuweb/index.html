@@ -997,20 +997,60 @@
         });
     </script>
     <script src="../../main.js"></script>
-    <script src='https://cdn.jsdelivr.net/npm/sweetalert2'></script>
+    <!-- <script src='https://cdn.jsdelivr.net/npm/sweetalert2'></script> -->
+    <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
+
     <script>
+//----------------------------- buscar abatar em github---------------------------   
+//   Swal.fire({
+//   title: 'Submit your Github username',
+//   input: 'text',
+//   inputAttributes: {
+//     autocapitalize: 'off'
+//   },
+//   showCancelButton: true,
+//   confirmButtonText: 'Look up',
+//   showLoaderOnConfirm: true,
+//   preConfirm: (login) => {
+//     return fetch(`//api.github.com/users/${login}`)
+//       .then(response => {
+//         if (!response.ok) {
+//           throw new Error(response.statusText)
+//         }
+//         return response.json()
+//       })
+//       .catch(error => {
+//         Swal.showValidationMessage(
+//           `Request failed: ${error}`
+//         )
+//       })
+//   },
+//   allowOutsideClick: () => !Swal.isLoading()
+// }).then((result) => {
+//   if (result.value) {
+//     Swal.fire({
+//       title: `${result.value.login}'s avatar`,
+//       imageUrl: result.value.avatar_url
+//     })
+//   }
+// })
+//--------------------------------------------------------
         function mensaje11() {
-            swal({
+            swal.fire({
                 //   title: '<strong>COMPARTIR</strong>',
                 type: 'info',
                 html: '<p>El comercio electrónico, también conocido como e-commerce (electronic commerce en inglés) o bien negocios por Internet o negocios online o negocios en línea, consiste en la compra y venta de productos o de servicios a través de medios electrónicos, tales como Internet y otras redes informáticas.</p>',
                 backdrop: `rgba(0,0,123,0.4)`
 
             })
+            // Swal.fire('Any fool can use a computer')
+
         }
 
         function mensaje12() {
-            swal({
+            swal.fire({
                 type: 'info',
                 html: '<p>Un blog es un sitio web en el que se va publicando contenido cada cierto tiempo en forma de artículos (también llamados posts) ordenados por fecha de publicación, así el artículo más reciente aparecerá primero.</P>',
                 backdrop: `rgba(0,0,123,0.4)`
@@ -1018,7 +1058,7 @@
         }
 
         function mensaje13() {
-            swal({
+            swal.fire({
                 type: 'info',
                 html: '<p>“Las webs corporativas son las que sirven para dar la información de la marca de la empresa”. No están orientadas a la venta de productos, sino a dar información sobre la empres y defender la imagen de la misma en el mercado online.</P>',
                 backdrop: `rgba(0,0,123,0.4)`
@@ -1026,7 +1066,7 @@
         }
 
         function mensaje14() {
-            swal({
+            swal.fire({
                 type: 'info',
                 html: '<p>“Un desarrollo a medida es un proceso más “natural” ya que el sitio web se diseña para adaptarse a tu marca, en lugar de tratar que tu marca se adecue a una plantilla. En este tipo de desarrollo se parte de un folio en blanco y con total libertad, de un concepto propio que se puede ir amoldando y adaptando mucho más al usuario potencial de tu web.</P>',
                 backdrop: `rgba(0,0,123,0.4)`
@@ -1034,7 +1074,7 @@
         }
 
         function mensaje20() {
-            swal({
+            swal.fire({
                 type: 'info',
                 html: '<p>“Cuando hablamos de “plantillas” nos referimos a temas que van a cambiar completamente el look&feel del sitio.</P>',
                 backdrop: `rgba(0,0,123,0.4)`
@@ -1042,7 +1082,7 @@
         }
 
         function mensaje50() {
-            swal({
+            swal.fire({
                 type: 'info',
                 html: '<p>“Una web app es una versión de la página web optimizada y adaptable a cualquier dispositivo.<br>Los sistemas de planificación de recursos empresariales (ERP, por sus siglas en inglés, enterprise resource planning) son los sistemas de información gerenciales que integran y manejan muchos de los negocios asociados con las operaciones de producción y de los aspectos de distribución de una compañía en la producción de bienes o servicios.</P>',
                 backdrop: `rgba(0,0,123,0.4)`
@@ -1050,7 +1090,7 @@
         }
 
         function mensaje90() {
-            swal({
+            swal.fire({
                 type: 'info',
                 html: '<p>“Se denomina posicionamiento en buscadores, posicionamiento web u Optimización en motores de búsqueda (SEO por sus siglas en inglés, de Search Engine Optimization que se traduce, "Optimización para motores de búsqueda") al proceso de mejorar la visibilidad de un sitio web en los diferentes buscadores, como Google, Bing o Yahoo de manera orgánica.</P>',
                 backdrop: `rgba(0,0,123,0.4)`
